@@ -337,12 +337,13 @@ If you think this would be a useful feature, you should [try to convince Matz](h
 
 It's difficult to show most optimizations by code, but some nice optimizations made it in Ruby 2.0.0.
 
-One we can demonstrate was to make many floats immediates. This avoids creating new objects in many cases:
+One we can demonstrate was to make many floats immediates on 64-bit systems. This avoids creating new objects in many cases:
 ``` ruby
 # Ruby 1.9
 4.2.object_id == 4.2.object_id # => false
 
 # Ruby 2.0
+warn "Optimization only on 64 bit systems" unless 42.size * 8 == 64
 4.2.object_id == 4.2.object_id # => true (4.2 is immediate)
 4.2e100.object_id == 4.2e100.object_id # => false (4.2e100 isn't)
 ```
