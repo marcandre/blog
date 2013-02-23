@@ -69,7 +69,6 @@ class AddFoo< ActiveRecord::Migration
   end
 end
 ```
-<script src='http://pastie.org/1832154.js'></script>
 
 Much better. Hopefully we'll soon be able to specify `:from => ...` when issuing `change_column_default` or similar so that they become undoable too.
 
