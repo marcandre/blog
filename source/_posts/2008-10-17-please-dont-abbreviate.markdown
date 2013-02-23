@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2008/10/please-dont-abbreviate.html
 ---
 
 Abbreviation sucks. I'll add famous people that agree with me here when I get the time. And if I find any!

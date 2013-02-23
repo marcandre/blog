@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2009/04/whats-point-of-ruby-187.html
 ---
 
 Can you guess how many built-in methods were introduced or modified when Ruby 1.8.5 came out? How about Ruby 1.8.6? Or the most recent 1.8.7?

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "method_missing, politely"
+alias: 2010/11/methodmissing-politely.html
 ---
 In their <a href="politeprogrammer.com/blog.html">Polite Programmer</a> talk at Rubyconf, Jim Weirich and Chris Nelson pointed out that merely adding some behavior with `method_missing` wasn't quite polite, as shown below:
 

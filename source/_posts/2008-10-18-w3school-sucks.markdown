@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2008/10/w3school-sucks.html
 ---
 
 I'm always mesmerized as to why <a href="http://www.w3schools.com/">w3schools</a> is considered the html/css reference. It just sucks.

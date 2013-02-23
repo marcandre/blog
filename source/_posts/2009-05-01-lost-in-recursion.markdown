@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2009/05/lost-in-recursion.html
 ---
 
 Last time I asked a simple (but quite hard) Ruby quiz:

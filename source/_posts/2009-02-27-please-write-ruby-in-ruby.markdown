@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2009/02/please-write-ruby-in-ruby.html
 ---
 
 I'm always surprised when I see bright people writing ruby code without using ruby's standard lib. Do I need to point out that it's less readable and more error prone?

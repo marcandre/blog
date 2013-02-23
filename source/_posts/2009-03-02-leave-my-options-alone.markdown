@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2009/03/leave-my-options-alone.html
 ---
 
 Let me start by asking you a small quiz:

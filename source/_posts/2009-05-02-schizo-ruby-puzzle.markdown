@@ -1,5 +1,7 @@
 ---
 layout: post
+title: A schizo Ruby puzzle
+alias: 2009/05/schizo-ruby-puzzle.html
 ---
 
 Quick quirky quiz (schizo version)

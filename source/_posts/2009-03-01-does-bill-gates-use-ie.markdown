@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Does Bill Gates use IE?"
+alias: 2009/03/does-bill-gates-use-ie.html
 ---
 
 Anyone who knows me personally is bound to know that I despise Windows (and Internet Explorer among other Microsoft products). I'm the first to admit that my hatred borders on irrationality. The fact that I'm a complete newbie on Windows probably doesn't help either. I can count on my fingers the number of hours I spent playing/cursing on windows. That being said, every single time I have to use windows, I always wonder: does Bill Gates uses it? What's his reaction to all those things that pop-up? Does he browse on Internet Explorer? Does he ever wonder if he just clicked properly and something is happening, or if the computer is just waiting for another click?

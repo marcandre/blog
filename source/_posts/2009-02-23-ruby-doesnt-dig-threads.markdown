@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2009/02/ruby-doesnt-dig-threads.html
 ---
 
 Either I'm missing something, or threads in both MRI and YARV just plain suck. My test program goes through a 10 MB file of random data, splits it in chunks (either 1K, 10K or 100K each). The results for MRI show the threaded version is much slower (~2x), in YARV performance is similar but usually slower for the threaded version. Mind you, I'm running this on 4 cores! rubinius looks like YARV on a valium overdose (20x slower...). Only in JRuby are things like what I expected, i.e. similar performance or faster for threads, with the difference being noticeable with more processing.

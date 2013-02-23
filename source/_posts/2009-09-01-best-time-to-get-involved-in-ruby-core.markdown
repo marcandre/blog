@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2009/09/best-time-to-get-involved-in-ruby-core.html
 ---
 Apart from enjoying the summer, I've spent time hacking on MRI, especially since I've been accepted as a committer. The feature freeze for Ruby 1.9.2 was planned for yesterday and this has been pushed back a couple of days before. Rejoice!
 

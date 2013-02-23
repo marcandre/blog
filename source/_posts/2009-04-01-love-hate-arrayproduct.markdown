@@ -1,5 +1,7 @@
 ---
 layout: post
+title: Love & Hate: Array#product
+alias: 2009/04/love-hate-arrayproduct.html
 ---
 
 Quick quirky quizz:

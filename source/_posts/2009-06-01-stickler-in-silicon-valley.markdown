@@ -1,5 +1,6 @@
 ---
 layout: post
+alias: 2009/06/stickler-in-silicon-valley.html
 ---
 I have not been actively looking for a job yet. Nevertheless, I was contacted by a startup and invited to spend a week in Silicon Valley / San Francisco, hacking around with them to see if I could become part of their team, which I found quite flattering. I learned lots of new things in California. A couple of new words too. I'm still unsure as to what exactly a hipster is, but "stickler" was easier to grasp: one who insists on exactness or completeness in the observance of something.
 

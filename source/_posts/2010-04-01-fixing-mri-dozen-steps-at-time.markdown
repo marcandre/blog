@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Fixing MRI, a dozen steps at a time"
+alias: 2010/04/fixing-mri-dozen-steps-at-time.html
 ---
 Is there a term like bugfield? You know, when everytime you get to take a couple of steps in a code base you encounter a different bug, which leads to another one, ..., like a minefield of bugs?
 

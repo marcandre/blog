@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Major Webcam Headache"
+alias: 2008/09/major-webcam-headache.html
 ---
 I'm lost at sea. I've spent hours reading, installing, testing and I still can't see how I'll achieve my goal. It's quite simple, really. I want to build a website that will allow me to:
 

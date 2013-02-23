@@ -1,5 +1,7 @@
 ---
 layout: post
+title: DRY migrations
+alias: 2011/04/dry-migrations.html
 ---
 
 I wanted to write a post about the many things that should be fixed with Rails.
