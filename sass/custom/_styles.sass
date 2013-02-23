@@ -1,0 +1,370 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+html
+	background: #6f6d00 url(/images/background.jpg) repeat-y top center
+	color: #333333
+
+body
+	& > header
+		padding: 0
+		border: 0
+		background: none
+
+	& > footer
+		background: none
+		margin-bottom: 0
+
+	& > div > div
+		background: none
+		border: none
+h1
+	color: #6f6d00
+
+body > nav,
+#main,
+body > footer
+	background: none
+	border: none
+	padding-left: 95px
+#main,
+	padding-left: 45px
+
+aside.sidebar
+	text-shadow: none
+	border: none
+	h1
+		color: #333
+	li
+		border: none
+	a
+		text-decoration: none
+	a:hover
+		text-decoration: underline
+
+.toggle-sidebar
+	visibility: hidden
+
+
+.toggle_show
+	position: relative
+	top: 0
+	left: 0
+
+	.long
+		position: absolute
+		top: 0
+		left: 0
+
+	.over
+		visibility: hidden
+
+	&:hover
+		.over
+			visibility: visible
+
+		.normal
+			visibility: hidden
+
+.quizz
+	border-spacing: 2px
+	border-collapse: separate
+
+	.q
+		background-color: #ddd
+		padding: 4px
+
+		&.clicked
+			border: solid 2px red
+			padding: 2px
+		&.y
+
+			&.clicked
+				border: solid 2px green
+				padding: 2px
+
+	.reveal .y
+		background-color: #afa
+//   * {
+//   margin: 0;
+//   padding: 0; }
+//   html {
+//   height: 100%;
+//   }
+//   abbr { border: 0; }
+//   a img {
+//   border-width:0;
+//   }
+//   /* Special
+//   -----------------------------------------------
+//   */
+//   .quizz .q { background-color: #ddd; padding: 4px;}
+//   .quizz .q.x.clicked { border: solid 2px red; padding: 2px;}
+//   .quizz .q.y.clicked { border: solid 2px green; padding: 2px;}
+//   .quizz .reveal .y { background-color: #afa }
+//   .with_border table, table.with_border  {
+//   border: 2px solid #6f6d00;
+//   border-spacing: 0;
+//   }
+//   .with_border th {
+//   border-bottom: 1px solid #6f6d00;
+//   padding: 3px;
+//   }
+//   .with_border td, .with_border th  {
+//   padding: 3px;
+//   }
+//   .toggle_show {
+//   position:relative;
+//   top:0;
+//   left:0;
+//   }
+//   .toggle_show .long {
+//   position:absolute;
+//   top:0;
+//   left:0;
+//   }
+//   .toggle_show .over {
+//   visibility: hidden;
+//   }
+//   .toggle_show:hover .over {
+//   visibility: visible;
+//   }
+//   .toggle_show:hover .normal {
+//   visibility: hidden;
+//   }
+//   #navbar, #Image1 {
+//   display: none;
+//   }
+//   .separator {
+//   margin: 20px 10px;
+//   clear: both;
+//   }
+//   .separator .line {
+//   background:url(http://marc-andre.ca/blog/assets/marks.png) no-repeat;
+//   height: 18px;
+//   }
+//   .post .separator {
+//   margin: 20px 30px;
+//   }
+//   .post .separator .line {
+//   background-position: 0px -18px;
+//   }
+//   a {
+//   color:#5588aa;
+//   text-decoration:none;
+//   }
+//   a:hover {
+//   color:#6699bb;
+//   text-decoration:underline;
+//   }
+//   .sidebar a {
+//   color:white;
+//   text-decoration:none;
+//   }
+//   .sidebar a:hover {
+//   color: #eeeeee;
+//   text-decoration:underline;
+//   }
+//   .bio a{
+//   text-decoration:underline;
+//   }
+//   .post-timestamp {
+//   float: right;
+//   color:#6f6d00;
+//   }
+//   q {
+//   font-family: Inconsolata, Consolas, 'Deja Vu Sans Mono', 'Liberation Mono', 'Droid Sans Mono', Monaco, monospace;
+//   }
+//   tt {
+//   font-family: Inconsolata, Consolas, 'Deja Vu Sans Mono', 'Liberation Mono', 'Droid Sans Mono', Monaco, monospace;
+//   font-size: 110%;
+//   color: #44a
+//   }
+//   /* Outer-Wrapper
+//   ----------------------------------------------- */
+//   #outer-wrapper {
+//   width: 1010px;
+//   margin:0 auto;
+//   text-align:left;
+//   font: normal normal 81% Verdana,'Trebuchet MS',Trebuchet,Arial,Sans-serif;
+//   height: 100%;
+//   }
+//   #wrap2 {
+//   }
+//   #content-wrapper {
+//   margin: 0px 25px 0px 90px;
+//   }
+//   #main-wrapper {
+//   width: 607px;
+//   float: left;
+//   word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+//   overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+//   }
+//   #sidebar-wrapper {
+//   width: 230px;
+//   float: right;
+//   word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+//   overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+//   }
+//   /* Headingspadding:0 0 4px;
+//   line-height:1.4em;
+//   ----------------------------------------------- */
+//   h2 {
+//   font-size: 200%;
+//   color:#000000;
+//   font-weight:normal;
+//   }
+//   /* Posts
+//   -----------------------------------------------
+//   */
+//   .post {
+//   }
+//   .post h3 {
+//   margin:.25em 0 0;
+//   font-size:200%;
+//   font-weight:normal;
+//   color:#6f6d00;
+//   }
+//   .post h3 a, .post h3 a:visited, .post h3 strong {
+//   display:block;
+//   text-decoration:none;
+//   color:#6f6d00;
+//   font-weight:normal;
+//   }
+//   .post h3 strong, .post h3 a:hover {
+//   color:#333333;
+//   }
+//   .post-body {
+//   margin:0 0 .75em;
+//   line-height:1.6em;
+//   }
+//   .post-body blockquote {
+//   line-height:1.3em;
+//   }
+//   .post-footer {
+//   margin: .75em 0;
+//   color:#000000;
+//   letter-spacing:.1em;
+//   line-height: 1.4em;
+//   }
+//   .post-footer-line {
+//   clear: both;
+//   }
+//   .comment-link {
+//   margin-left:0;
+//   }
+//   .post img {
+//   }
+//   .post blockquote {
+//   margin:1em 20px;
+//   }
+//   .post blockquote p {
+//   margin:.75em 0;
+//   }
+//   /* Comments
+//   ----------------------------------------------- */
+//   #comments h4 {
+//   margin:1em 0;
+//   font-weight: bold;
+//   line-height: 1.4em;
+//   letter-spacing:.2em;
+//   color: #000000;
+//   }
+//   #comments-block {
+//   margin:1em 0 1.5em;
+//   line-height:1.6em;
+//   }
+//   #comments-block .comment-author {
+//   margin:.5em 0;
+//   }
+//   #comments-block .comment-body {
+//   margin:.25em 0 0;
+//   }
+//   #comments-block .comment-footer {
+//   margin:-.25em 0 2em;
+//   line-height: 1.4em;
+//   letter-spacing:.1em;
+//   }
+//   #comments-block .comment-body p {
+//   margin:0 0 .75em;
+//   }
+//   .deleted-comment {
+//   font-style:italic;
+//   color:gray;
+//   }
+//   #blog-pager-newer-link {
+//   float: left;
+//   }
+//   #blog-pager-older-link {
+//   float: right;
+//   }
+//   #blog-pager {
+//   text-align: center;
+//   }
+//   .feed-links {
+//   clear: both;
+//   line-height: 2.5em;
+//   }
+//   /* Sidebar Content
+//   ----------------------------------------------- */
+//   .sidebar {
+//   color: #000000;
+//   }
+//   .sidebar ul {
+//   list-style:none;
+//   margin:0 0 0;
+//   padding:0 0 0;
+//   }
+//   .sidebar li {
+//   margin:0;
+//   padding-top:0;
+//   padding-right:0;
+//   padding-bottom:.25em;
+//   padding-left:15px;
+//   text-indent:-15px;
+//   line-height:1.5em;
+//   }
+//   .sidebar .widget, .main .widget {
+//   }
+//   .main .Blog {
+//   border-bottom-width: 0;
+//   }
+//   /* Profile
+//   ----------------------------------------------- */
+//   .profile-img {
+//   float: left;
+//   margin-top: 0;
+//   margin-right: 5px;
+//   margin-bottom: 5px;
+//   margin-left: 0;
+//   padding: 4px;
+//   border: 1px solid #cccccc;
+//   }
+//   .profile-data {
+//   margin:0;
+//   letter-spacing:.1em;
+//   color: #000000;
+//   font-weight: bold;
+//   line-height: 1.6em;
+//   }
+//   .profile-datablock {
+//   margin:.5em 0 .5em;
+//   }
+//   .profile-textblock {
+//   color: white;
+//   font-size: 90%;
+//   margin: 0.5em 0;
+//   line-height: 1.6em;
+//   }
+//   .profile-link {
+//   letter-spacing: .1em;
+//   }
+//   /* Footer
+//   ----------------------------------------------- */
+//   #footer {
+//   clear:both;
+//   margin:0 auto;
+//   line-height: 1.6em;
+//   letter-spacing:.1em;
+//   text-align: center;
+//   }
+//

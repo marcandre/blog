@@ -1,5 +1,5 @@
 .side-shadow-border {
-  @include box-shadow(lighten($sidebar-bg, 5) 0 1px);
+//  @include box-shadow(lighten($sidebar-bg, 5) 0 1px); // Custom
 }
 aside.sidebar {
   overflow: hidden;
