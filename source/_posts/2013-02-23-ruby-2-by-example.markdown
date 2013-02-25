@@ -31,7 +31,7 @@ cycle('odd', 'even', nme: 'foo')
 # => ArgumentError: unknown keyword: nme
 
 # To get exact same result:
-def cycle(first_value, *values, name: 'default', **ignore_extra_options)
+def cycle(first_value, *values, name: 'default', **ignore_extra)
   # ...
 end
 ```
@@ -48,23 +48,31 @@ def name({required_arguments, ...}
 
 Note that, keyword arguments must have defaults, or else must be captured by `**extra` at the end. There is a [feature request](https://bugs.ruby-lang.org/issues/7701) for mandatory keyword arguments.
 
-An example showing most types:
+Defaults, for optional parameters or keyword arguments, can be mostly any expression, including method calls for the current object and can use previous parameters.
+
+An complex example showing most types:
 ```
-def hello(need, need2,
-          maybe1 = 42, maybe2 = :etc,
-          *args,
-          named1: 'hello', named2: 'world',
-          **options,
-          &block)
+class C
+  def hi(needed, needed2,
+         maybe1 = "42", maybe2 = maybe1.upcase,
+         *args,
+         named1: 'hello', named2: a_method(named1, needed2),
+         **options,
+         &block)
+  end
+
+  def a_method(a, b)
+    # ...
+  end
 end
 
-method(:hello).parameters # => [[:req, :need], [:req, :need2],
-                        #     [:opt, :maybe1], [:opt, :maybe2],
-                        #     [:rest, :args],
-                        #     [:key, :named1], [:key, :named2],
-                        #     [:keyrest, :options],
-                        #     [:block, :block]
-                        #    ]
+C.instance_method(:hi).parameters
+# => [ [:req, :needed], [:req, :needed2],
+#      [:opt, :maybe1], [:opt, :maybe2],
+#      [:rest, :args],
+#      [:key, :named1], [:key, :named2],
+#      [:keyrest, :options],
+#      [:block, :block] ]
 ```
 
 [Known bug](http://bugs.ruby-lang.org/issues/7922): it's not currently possible to ignore extra options without naming the `**` argument.
