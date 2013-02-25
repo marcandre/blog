@@ -351,3 +351,15 @@ warn "Optimization only on 64 bit systems" unless 42.size * 8 == 64
 ## What else?
 
 An extensive list of changes is the [NEWS file](https://github.com/marcandre/ruby/blob/news/NEWS.rdoc).
+
+## I want it!
+
+Try it out today:
+
+* install with rvm: `rvm get head && rvm install 2.0.0`
+* install with rbenv: `rbenv install 2.0.0-p0` (I think)
+* other installation: See the [ruby-lang.org](http://www.ruby-lang.org/en/downloads/) instructions
+
+For those who can't upgrade yet, you can still have some of the fun with my [`backports gem`](https://github.com/marcandre/backports). It makes  `lazy`, `bsearch` and a couple more available for any version of Ruby. The complete list is in the [`readme`](https://github.com/marcandre/backports#ruby-200).
+
+Enjoy Ruby 2.0.0
