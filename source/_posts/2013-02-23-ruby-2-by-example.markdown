@@ -75,7 +75,7 @@ ruby -w -e "
     hello, world = 'hello, world'.split(', ')
     world
   end"
-# => warning: assigned but unused variable - world
+# => warning: assigned but unused variable - hello
 ```
 
 The way to avoid the warning was to use `_`. Now we can use any variable name starting with an underscore:
@@ -303,7 +303,7 @@ ary.bsearch {|x| x >=   6 } #=> 7
 ary.bsearch {|x| x >= 100 } #=> nil
 
 # Also on ranges, including ranges of floats:
-(Math::PI * 6 .. Math::PI * 6.5).bsearch{|f| Math.cos <= 0.5}
+(Math::PI * 6 .. Math::PI * 6.5).bsearch{|f| Math.cos(f) <= 0.5}
 # => Math::PI * (6+1/3.0)
 ```
 
