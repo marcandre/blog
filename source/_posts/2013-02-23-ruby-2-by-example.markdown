@@ -46,7 +46,7 @@ def name({required_arguments, ...}
          {&block_capture})
 ```
 
-In Ruby 2.0.0, keyword arguments must have defaults, or else must be captured by `**extra` at the end. Next version [will allow](https://bugs.ruby-lang.org/issues/7701) mandatory keyword arguments, e.g. `def hello(optional: 'default', required:)`/
+In Ruby 2.0.0, keyword arguments must have defaults, or else must be captured by `**extra` at the end. Next version [will allow](https://bugs.ruby-lang.org/issues/7701) mandatory keyword arguments, e.g. `def hello(optional: 'default', required:)`.
 
 Defaults, for optional parameters or keyword arguments, can be mostly any expression, including method calls for the current object and can use previous parameters.
 
