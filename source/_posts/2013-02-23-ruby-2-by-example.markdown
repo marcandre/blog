@@ -50,7 +50,7 @@ In Ruby 2.0.0, keyword arguments must have defaults, or else must be captured by
 
 Defaults, for optional parameters or keyword arguments, can be mostly any expression, including method calls for the current object and can use previous parameters.
 
-An complex example showing most types:
+A complex example showing most of this:
 ```
 class C
   def hi(needed, needed2,
