@@ -36,6 +36,37 @@ def cycle(first_value, *values, name: 'default', **ignore_extra_options)
 end
 ```
 
+This makes method definitions very flexible. In summary:
+```
+def name({required_arguments, ...}
+         {optional_arguments, ...}
+         {*rest || additional_required_arguments...} # Did you know?
+         {keyword_arguments: "with_defaults"...}
+         {**rest_of_keyword_arguments}
+         {&block_capture})
+```
+
+Note that, keyword arguments must have defaults, or else must be captured by `**extra` at the end. There is a [feature request](https://bugs.ruby-lang.org/issues/7701) for mandatory keyword arguments.
+
+An example showing most types:
+```
+def hello(need, need2,
+          maybe1 = 42, maybe2 = :etc,
+          *args,
+          named1: 'hello', named2: 'world',
+          **options,
+          &block)
+end
+
+method(:hello).parameters # => [[:req, :need], [:req, :need2],
+                        #     [:opt, :maybe1], [:opt, :maybe2],
+                        #     [:rest, :args],
+                        #     [:key, :named1], [:key, :named2],
+                        #     [:keyrest, :options],
+                        #     [:block, :block]
+                        #    ]
+```
+
 [Known bug](http://bugs.ruby-lang.org/issues/7922): it's not currently possible to ignore extra options without naming the `**` argument.
 
 ## Symbol list creation
