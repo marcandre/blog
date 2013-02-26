@@ -26,7 +26,7 @@ body > footer
 	background: none
 	border: none
 	padding-left: 95px
-#main,
+#main
 	padding-left: 45px
 
 aside.sidebar
@@ -40,6 +40,11 @@ aside.sidebar
 		text-decoration: none
 	a:hover
 		text-decoration: underline
+	+opacity(0.7)
+	+transition(0.3s)
+	&:hover
+		+transition(0.3s)
+		+opacity(1.0)
 
 .toggle-sidebar
 	visibility: hidden
