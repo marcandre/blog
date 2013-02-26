@@ -46,7 +46,7 @@ def name({required_arguments, ...}
          {&block_capture})
 ```
 
-In Ruby 2.0.0, keyword arguments must have defaults, or else must be captured by `**extra` at the end. Next version [will allow](https://bugs.ruby-lang.org/issues/7701) mandatory keyword arguments, e.g. `def hello(optional: 'default', required:)`.
+In Ruby 2.0.0, keyword arguments must have defaults, or else must be captured by `**extra` at the end. Next version [will allow](https://bugs.ruby-lang.org/issues/7701) mandatory keyword arguments, e.g. `def hello(optional: 'default', required:)`, but there are [ways to do it now](http://stackoverflow.com/questions/13250447/can-i-have-required-named-parameters-in-ruby-2-x/15078852#15078852).
 
 Defaults, for optional parameters or keyword arguments, can be mostly any expression, including method calls for the current object and can use previous parameters.
 
@@ -395,10 +395,10 @@ An extensive list of changes is the [NEWS file](https://github.com/marcandre/rub
 
 Try it out today:
 
-* install with rvm: `rvm get head && rvm install 2.0.0`
+* install with rvm: `rvm get head && rvm install 2.0.0` (note that `rvm get stable` is not sufficient!)
 * install with rbenv: `rbenv install 2.0.0-p0` (I think)
 * other installation: See the [ruby-lang.org](http://www.ruby-lang.org/en/downloads/) instructions
 
 For those who can't upgrade yet, you can still have some of the fun with my [`backports gem`](https://github.com/marcandre/backports). It makes  `lazy`, `bsearch` and a couple more available for any version of Ruby. The complete list is in the [`readme`](https://github.com/marcandre/backports#ruby-200).
 
-Enjoy Ruby 2.0.0
+Enjoy Ruby 2.0.0!
