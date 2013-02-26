@@ -232,7 +232,7 @@ require 'some_other_file' # => not affected, will use the default behavior
 (1..4).send :include?, 2..3 # => false (for now, send ignores refinements)
 ```
 
-Full spec is [here](http://bugs.ruby-lang.org/projects/ruby-trunk/wiki/RefinementsSpec) and is subject to change in later versions.
+Full spec is [here](http://bugs.ruby-lang.org/projects/ruby-trunk/wiki/RefinementsSpec) and is subject to change in later versions. More in-depth discussion [here](http://benhoskin.gs/2013/02/24/ruby-2-0-by-example#refinements)
 
 ## Lazy enumerators
 
@@ -372,11 +372,34 @@ This has been implemented for `nil`, `Struct` and `OpenStruct`, but not for `Enu
 
 If you think this would be a useful feature, you should [try to convince Matz](http://bugs.ruby-lang.org/issues/7292).
 
+## caller_locations
+
+It used to be tricky to know which method just called. It wasn't very efficient either, since the whole backtrace had to be returned. Each frame was a string that needed to be first computed by Ruby and probably parsed afterwards.
+
+Enters [`caller_locations`](http://ruby-doc.org/core-2.0/Kernel.html#method-i-caller_locations) that returns the information in an object fashion and with a better api that can limit the number of frames requested.
+
+``` ruby
+# Ruby 1.9:
+def whoze_there_using_caller
+  caller[0][/`([^']*)'/, 1]
+end
+
+# Ruby 2.0:
+def whoze_there_using_locations
+  caller_locations(1,1)[0].label
+end
+```
+
+How much faster is it?
+A [simple test](https://gist.github.com/marcandre/5041813) gives me 45x speedup for a short stacktrace, and 100x for a stacktrace of 100 entries!
+
+The extra information like the file path, line number are still accessible; instead of asking for `label`, ask for `path` or `lineno`.
+
 ## Optimizations
 
-It's difficult to show most optimizations by code, but some nice optimizations made it in Ruby 2.0.0.
+It's difficult to show most optimizations by code, but some nice optimizations made it in Ruby 2.0.0. In particular, the GC was optimized, in particular to make forking much faster.
 
-One we can demonstrate was to make many floats immediates on 64-bit systems. This avoids creating new objects in many cases:
+One optimization we can demonstrate was to make many floats immediates on 64-bit systems. This avoids creating new objects in many cases:
 ``` ruby
 # Ruby 1.9
 4.2.object_id == 4.2.object_id # => false
