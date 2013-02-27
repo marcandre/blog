@@ -6,6 +6,8 @@ comments: true
 alias: http://blog.marc-andre.ca/2013/02/23/ruby-2-dot-0-0-by-example
 categories:
 ---
+There's a [Portugese translation](http://rrmartins.github.com/blog/2013/02/26/traducao-ruby-2-dot-0-por-exemplos/)  by Rodrigo Martins if you prefer.
+
 A quick summary of some of the new features of Ruby 2.0.0:
 
 # Language Changes
