@@ -24,6 +24,8 @@ Let me start by asking you a small quiz:
 # ?
 ```
 
+<!-- more -->
+
 If you answered "Nope", congratulations, you're a normal, sane human being. I like you. Anyone answering "Yup" is either slightly crazy, guessed that I wasn't asking a trivial question (or both?). Because indeed, the output is <i>different</i>. Why? Because the first `content_tag_for` modifies `@style[:class]` argument.
 
 You're probably not expecting yet another apparently trivial question, but here goes: <i>is this a bug</i>?

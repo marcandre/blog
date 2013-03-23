@@ -8,6 +8,8 @@ I wanted to write a post about the many things that should be fixed with Rails.
 
 Interestingly, Rails 3.1 fixes quite many of these.
 
+<!-- more -->
+
 At last, jQuery takes over Prototype. Prototype was nice and didn't exactly solve the same problem, but in my experience jQuery is mandatory for developing anything decent. Same thing for Sass and I'm glad they have corrected the mistake of the default sass location (which used to be `/public/stylesheets/sass` when it <span style="font-style:italic;">had to be</span> in `/app` somewhere. Handling assets was also sorely missing; I've been using sprockets before and it's a fine choice.
 
 I'm happily surprised at CoffeeScript. I've also been using it but I didn't expect it to become the default, especially given the fact that it's quite young and I'd argue it's a much bolder move than using Haml. I have no idea as to why Haml doesn't also come standard.

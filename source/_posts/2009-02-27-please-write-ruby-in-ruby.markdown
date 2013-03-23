@@ -9,6 +9,8 @@ I plead all rubyists to re-read the doc for Array, Hash and Enumerable/Enumerato
 
 I was quite amazed to see the following code (written by an ex rails-core programmer, nothing less!). Check out the three methods and ask yourself what they do and how they should be written (mouse-over the code for the answers).
 
+<!-- more -->
+
 <div class="toggle_show"><div class="normal long">
 ``` ruby
 class Options < Hash

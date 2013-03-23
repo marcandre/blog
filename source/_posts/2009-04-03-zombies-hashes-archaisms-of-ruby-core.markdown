@@ -5,7 +5,7 @@ alias: 2009/04/zombies-hashes-archaisms-of-ruby-core.html
 
 I just <b>love</b> hashes. So much so, I named my blog after them. I also like that the hash sign is used for comments, in Ruby, or the way <i>hash</i> resembles <i>hatch</i>, thus the messy graphic theme and all. But I really like hashes. They are like mini-objects (object hatchlings?) and I tend to use them to store all sorts of information or instead of many conditions with `case x; when :a ...; when :b ...`.
 
-So I was quite surprised to note that in Ruby, either it's really easy and natural to create a hash (with the super nice `{:key => value, ...}` syntax) or, when you need to generate a hash programatically, you're basically stuck with
+So I was quite surprised to note that in Ruby, either it's really easy and natural to create a hash (with the super nice `{:key => value, ...}` syntax) or<!-- more -->, when you need to generate a hash programatically, you're basically stuck with
 
 ``` ruby
 h = {}

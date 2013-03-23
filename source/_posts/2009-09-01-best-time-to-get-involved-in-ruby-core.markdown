@@ -4,7 +4,7 @@ alias: 2009/09/best-time-to-get-involved-in-ruby-core.html
 ---
 Apart from enjoying the summer, I've spent time hacking on MRI, especially since I've been accepted as a committer. The feature freeze for Ruby 1.9.2 was planned for yesterday and this has been pushed back a couple of days before. Rejoice!
 
-Why? The reason <a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/25707">stated</a> was that the next version of Ruby will, for the first time ever, pass the <a href="http://github.com/rubyspec/rubyspec">RubySpec</a>. This makes RubySpec the official meeting point for all Ruby implementations, not just Rubinius (the originator of RubySpec), JRuby and others. This should also give a bit more time to decide on a couple of <a href="http://redmine.ruby-lang.org/wiki/ruby/SomeCoreFeaturesFor192">new features</a> that might make it in 1.9.2.
+Why? <!-- more --> The reason <a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/25707">stated</a> was that the next version of Ruby will, for the first time ever, pass the <a href="http://github.com/rubyspec/rubyspec">RubySpec</a>. This makes RubySpec the official meeting point for all Ruby implementations, not just Rubinius (the originator of RubySpec), JRuby and others. This should also give a bit more time to decide on a couple of <a href="http://redmine.ruby-lang.org/wiki/ruby/SomeCoreFeaturesFor192">new features</a> that might make it in 1.9.2.
 
 Much work has been done to have the specs meet MRI 1.9.x and the language and core sections only have a couple of failures<sup>1</sup>. Most are due to cases for which the best decisions still have to be figured out. I'll remind you that it's easy to gain commit access to RubySpec: any accepted patch grants you your commit bit.
 

@@ -15,6 +15,8 @@ y == x   # ==> false
 
 Here's how I got to checkout Ruby's source and stumble upon that.
 
+<!-- more -->
+
 ## Age of Innocence
 
 This is all Mathieu's fault. He asked innocently if my <a href="http://github.com/marcandre/backports">backports gem</a> was compatible with Rails. I thought "duh! of course!". After all, it's meant to be compatible with any Ruby code.

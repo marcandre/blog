@@ -5,6 +5,8 @@ alias: 2008/10/w3school-sucks.html
 
 I'm always mesmerized as to why <a href="http://www.w3schools.com/">w3schools</a> is considered the html/css reference. It just sucks.
 
+<!-- more -->
+
 For example, check out the <a href="http://www.w3schools.com/css/pr_class_position.asp">definition of `position: absolute`</a>. Shouldn't "its containing block" be "its containing <span style="font-weight: bold;">positionned</span> block"? Why is the example so simplistic as to be completely pointless?
 
 Here's a <a href="http://stopdesign.com/articles/absolute/">much better explanation</a>.

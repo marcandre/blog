@@ -23,7 +23,7 @@ p.play_some_Beethoven # => "Here's some_Beethoven"
 p.respond_to? :play_some_Beethoven # => false
 ```
 
-In order for `respond_to?` to return `true`, one can specialize it, as follows:
+In order for `respond_to?` to return `true`, one can specialize it<!-- more -->, as follows:
 
 ``` ruby
 class StereoPlayer

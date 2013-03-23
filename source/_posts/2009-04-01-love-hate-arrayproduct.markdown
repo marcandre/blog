@@ -15,6 +15,8 @@ p [2,3,7].product
 
 Are you expecting a reference to the late Douglas Adams?
 
+<!-- more -->
+
 <b>Sum</b>
 
 If you're running Rails, `sum` will indeed return 42. In straight Ruby, though, `sum` won't be defined.

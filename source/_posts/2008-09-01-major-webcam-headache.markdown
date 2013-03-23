@@ -11,6 +11,8 @@ I'm lost at sea. I've spent hours reading, installing, testing and I still can't
 
 - be completely automated, using any combination of linux servers (on ec2) and commercial hosts if needed.
 
+<!-- more -->
+
 After a bit of research, I thought this would be pretty easy.
 
 - red5 is a cross platform solution to enable video recording. Alternative solutions would be Wowza or a hosted solution like influxis.com/uvault/...

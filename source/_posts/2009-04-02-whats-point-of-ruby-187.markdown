@@ -7,6 +7,8 @@ Can you guess how many built-in methods were introduced or modified when Ruby 1.
 
 <div class="toggle_show with_border"><div class="normal long"><table><tr><th>Ruby&nbsp;</th><th>Changes</th></tr><tr><td>1.8.5</td><td><i>Roll over</i></td></tr><tr><td>1.8.6</td><td><i>for the</i></td></tr><tr><td>1.8.7</td><td><i>answers!</i></td></tr></table></div><div class="over"><table><tr><th>Ruby&nbsp;</th><th>Changes</th></tr><tr><td>1.8.5</td><td>2</td></tr><tr><td>1.8.6</td><td>3</td></tr><tr><td>1.8.7</td><td><b>137</b></td></tr></table></div></div>
 
+<!-- more -->
+
 I'd love to check that the number of changes was minimal for earlier 1.8.x releases, but I can't find a good list of changes (other than going through the full changelogs) Anyone has that info?
 
 Are you writing code that targets 1.8.7? I know I'm not. The code I'm releasing on <a href="http://github.com/marcandre">github</a> is aimed at Ruby 1.8 and Ruby 1.9. The thing is, code that runs on 1.8.7 doesn't necessarily run on 1.9, and even less likely to run on 1.8.6 or earlier. At least if you're <a href="../02/please-write-ruby-in-ruby.html">writing Ruby in Ruby</a> and using the new `Enumerable` features, among others. So you have to test all three?

@@ -12,6 +12,8 @@ x == y   # ==> true
 y == x   # ==> false
 ```
 
+<!-- more -->
+
 Before giving the answer, let me give you a bit of background...
 
 In a blog post, <a href="http://ujihisa.blogspot.com/">Ujihisa</a> was discussing how to compare arrays in Ruby and I was curious about the implementation which deals with recursion.
