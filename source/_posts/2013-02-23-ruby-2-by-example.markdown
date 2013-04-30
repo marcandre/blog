@@ -298,13 +298,13 @@ end
 still_lazy = fib.lazy.take(1_000_000).drop(42)
 still_lazy.size # => 1_000_000 - 42
 
-class Enumerable
+module Enumerable
   def skip(every)
     unless block_given?
       return to_enum(:skip, every) { size && (size+every)/(every + 1) }
     end
     each_slice(every+1) do |first, *ignore|
-      yield last
+      yield first
     end
   end
 end
