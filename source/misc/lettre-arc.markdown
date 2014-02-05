@@ -95,8 +95,9 @@ Merci,
 
 Marc-André Lafortune
 
-Envoyé d'abord à Mme Laverdière, membre de parlement dans ma circonscription, en Mars 2013.
-Suite à une seconde missive en février 2014, on m'a conseillé de l'addresser à la ministre du revenu. Depuis l'écriture originale de ma lettre, j'ai eu confirmation que mon application au programme de divulgation volontaire avait été acceptée. La situation quant au formulaire T-1135 n'a [qu'empiré depuis](http://www.advisor.ca/news/industry-news/t1135-still-mystifies-practitioners-134031).
+*Envoyé d'abord à Mme Laverdière, membre de parlement dans ma circonscription, en Mars 2013.
+Suite à une seconde missive en février 2014, on m'a conseillé de l'addresser à la ministre du revenu. Depuis l'écriture originale de ma lettre, j'ai eu confirmation que mon application au programme de divulgation volontaire avait été acceptée. La situation quant au formulaire T-1135 n'a [qu'empiré depuis](http://www.advisor.ca/news/industry-news/t1135-still-mystifies-practitioners-134031).*
+
 ------
 
 **Note 1:**
