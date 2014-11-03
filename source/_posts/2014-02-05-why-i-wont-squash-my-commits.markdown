@@ -6,6 +6,8 @@ comments: true
 categories:
 ---
 
+There's a [Japanese translation](http://qiita.com/gogotanaka/items/8c55f69120965b077737)  by Gogo Tanaka if you prefer.
+
 ## tl;dnr
 
 While I really appreciate the constructive comments I get on pull requests I make, there’s one type of comment I have a hard time with.
