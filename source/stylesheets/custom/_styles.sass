@@ -1,0 +1,98 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+html
+	background: #6f6d00 url(/images/background.jpg) repeat-y top center
+	color: #333333
+
+body
+	& > header
+		padding: 0
+		border: 0
+		background: none
+
+	& > footer
+		background: none
+		margin-bottom: 0
+
+	& > div > div
+		background: none
+		border: none
+h1
+	color: #6f6d00
+
+body > nav,
+#main,
+body > footer
+	background: none
+	border: none
+	padding-left: 95px
+#main
+	padding-left: 45px
+
+aside.sidebar
+	text-shadow: none
+	border: none
+	h1
+		color: #333
+	li
+		border: none
+	a
+		text-decoration: none
+	a:hover
+		text-decoration: underline
+	+opacity(0.7)
+	+transition(0.3s)
+	&:hover
+		+transition(0.3s)
+		+opacity(1.0)
+
+.toggle-sidebar
+	visibility: hidden
+
+
+.toggle_show
+	position: relative
+	top: 0
+	left: 0
+
+	.long
+		position: absolute
+		top: 0
+		left: 0
+
+	.over
+		visibility: hidden
+
+	&:hover
+		.over
+			visibility: visible
+
+		.normal
+			visibility: hidden
+
+.quizz
+	border-spacing: 2px
+	border-collapse: separate
+
+	.q
+		background-color: #ddd
+		padding: 4px
+
+		&.clicked
+			border: solid 2px red
+			padding: 2px
+		&.y
+
+			&.clicked
+				border: solid 2px green
+				padding: 2px
+
+	.reveal .y
+		background-color: #afa
+
+ul.projects
+	li a
+		background-color: rgba(#fff, 0.3)
+		+border-radius(9px)
+		color: #000
+		padding: 5px

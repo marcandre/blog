@@ -13,6 +13,17 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= yield %>
+    <header><h1><a href="/"><img alt="# hash" height="166px; " src="/images/header.jpg" style="display: block" width="985px; "></a></h1></header>
+
+    <div id="main">
+      <div id="content">
+        <div>
+          <%= yield %>
+          <aside class="sidebar thirds">
+          </aside>
+          <span class="toggle-sidebar"></span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
