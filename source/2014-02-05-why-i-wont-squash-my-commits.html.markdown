@@ -6,6 +6,8 @@ comments: true
 categories:
 ---
 
+There's a [Japanese translation](http://qiita.com/gogotanaka/items/8c55f69120965b077737)  by Gogo Tanaka if you prefer.
+
 ## tl;dnr
 
 While I really appreciate the constructive comments I get on pull requests I make, there’s one type of comment I have a hard time with.
@@ -14,11 +16,16 @@ Please don't [ask me](https://github.com/rails/rails/pull/8267#issuecomment-1155
  to [squash](https://github.com/rails/rails/pull/13938#issuecomment-34061339)
  the commits of my pull requests.
 
-Don't ask me because, with all due respect to the amazing work from committers, I won’t do it.
+I won’t.
 
-Unless I've made an actual mistake, if my pull request has 5 commits, it is because each of them is independent and I feel they should remain so.
+If my pull request has 5 commits, it is because I each of them is independent and I believe they should remain so.
 
-If they really want to, project committers can manually squash and merge the commits, wait for someone else to make a PR with the commits squashed or even reject the PR.
+Project committers have a couple of choices:
+
+* merge the PR as is
+* manually squash the commits
+* wait for someone else to make a PR with the commits squashed
+* reject the PR
 
 Call it lunacy or pride, but I just won’t squash my commits. Hopefully committers won’t take offense at that as I’ll do my best to not take offense at their suggestion that I didn’t segment my commits correctly.
 
@@ -27,16 +34,16 @@ Call it lunacy or pride, but I just won’t squash my commits. Hopefully committ
 
 I imagine the historical reason it that many contributors aren't super comfortable with `git` and `git rebase -i` in particular, so their commits represent their train of thought, not a sequence of independent changes to apply. E.g.:
 
-* Introduce &lt;great feature&gt;
+* Introduce <great feature>
 * Oops, fix typo
-* Oh oh, fix a bug of &lt;great feature&gt;
-* Fix bug of &lt;great feature&gt; (for real this time)
+* Oh oh, fix a bug of <great feature>
+* Fix bug of <great feature> (for real this time)
 
 For these contributors, it is mandatory that the commits are not accepted as is. Squashing the whole thing is usually the safest bet.
 
 There are many contributors that use `git rebase -i` and `git commit -p` in their sleep though, so that won’t be the situation.
 
-The other reason I’ve [been told](https://github.com/rails/rails/pull/8267#issuecomment-11558238) is that "we generally squash all commits so that it's easy to backport/revert”. I can't agree with that. First, it is much more difficult to backport/revert just part of the PR if it is squashed. Morever, it’s pretty easy to backport/revert the whole PR by using `git revert` and `git cherry-pick` either with a range of commits or the merge commit. Less than 2% of commits get reverted anyways.
+The other reason I’ve been told is that "we generally squash all commits so that it's easy to backport/revert”. I can't agree with that. First, it is much more difficult to backport/revert just part of the PR if it is squashed. Morever, it’s pretty easy to backport/revert the whole PR by using `git revert` and `git cherry-pick` either with a range of commits or the merge commit. Less than 2% of commits get reverted anyways.
 
 ## When should committers not ask to squash commits?
 
