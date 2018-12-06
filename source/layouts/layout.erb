@@ -8,6 +8,8 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
     <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" %>
+    <script type="text/javascript">$.noConflict();</script>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
