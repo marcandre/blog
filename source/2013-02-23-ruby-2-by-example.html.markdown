@@ -404,6 +404,7 @@ The extra information like the file path, line number are still accessible; inst
 It's difficult to show most optimizations by code, but some nice optimizations made it in Ruby 2.0.0. In particular, the GC was optimized to make forking much faster.
 
 One optimization we can demonstrate was to make many floats immediates on 64-bit systems. This avoids creating new objects in many cases:
+
 ``` ruby
 # Ruby 1.9
 4.2.object_id == 4.2.object_id # => false

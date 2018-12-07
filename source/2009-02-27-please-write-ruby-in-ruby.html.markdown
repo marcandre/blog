@@ -12,6 +12,7 @@ I was quite amazed to see the following code (written by an ex rails-core progra
 <!-- more -->
 
 <div class="toggle_show"><div class="normal long">
+
 ``` ruby
 class Options < Hash
   #...
@@ -36,6 +37,7 @@ class Options < Hash
 end
 ```
 </div><div class="over">
+
 ``` ruby
 class Options < Hash
   #...
