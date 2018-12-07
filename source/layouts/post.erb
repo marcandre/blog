@@ -1,5 +1,30 @@
 <% wrap_layout :layout do %>
-  <article>
+  <article role="article">
+    <header>
+      <h1 class="entry-title"><%= current_page.data.title %></h1>
+      <p class="meta"><%= datetime_tag(current_page.date) %></p>
+    </header>
     <%= yield %>
   </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <script type="text/javascript">
+      var disqus_shortname = 'marc-andre';
+
+
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.marc-andre.ca<%= current_page.url%>/';
+        var disqus_url = 'http://blog.marc-andre.ca<%= current_page.url%>/';
+        var disqus_script = 'embed.js';
+
+      (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }());
+    </script>
+  </section>
 <% end %>

@@ -1,6 +1,8 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
+require_relative 'helpers'
+helpers CustomHelpers
 
 # Per-page layout changes:
 #
