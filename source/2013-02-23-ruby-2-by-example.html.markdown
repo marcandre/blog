@@ -39,7 +39,8 @@ end
 ```
 
 This makes method definitions very flexible. In summary:
-```
+
+```ruby
 def name({required_arguments, ...}
          {optional_arguments, ...}
          {*rest || additional_required_arguments...} # Did you know?
@@ -53,7 +54,8 @@ In Ruby 2.0.0, keyword arguments must have defaults, or else must be captured by
 Defaults, for optional parameters or keyword arguments, can be mostly any expression, including method calls for the current object and can use previous parameters.
 
 A complex example showing most of this:
-```
+
+```ruby
 class C
   def hi(needed, needed2,
          maybe1 = "42", maybe2 = maybe1.upcase,
@@ -109,7 +111,7 @@ puts "❤ Marc-André ❤"
 
 Did you know that Ruby can warn you about unused variables?
 
-```
+```shell
 # Any Ruby, with warning on:
 ruby -w -e "
   def hi
@@ -121,7 +123,7 @@ ruby -w -e "
 
 The way to avoid the warning was to use `_`. Now we can use any variable name starting with an underscore:
 
-```
+```shell
 # Ruby 1.9
 ruby -w -e "
   def foo

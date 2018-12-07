@@ -41,7 +41,7 @@ OK, that should be easy enough, right? There's even a full code example in the <
 
 Well, pipes seem to be giving me problems, so let's keep it simple and use normal files. Also, if I don't specify a rate of 15 fps, the visual part becomes <a href="http://www.marc-andre.ca/posts/blog/webcam/output-norate.flv">extremely fast</a>. Let's make it easier and simply try to concatenate the same 'input.flv' to itself instead of dealing with two different inputs. The example script thus becomes:
 
-```
+```shell
 ffmpeg -i input.flv -vn -f u16le -acodec pcm_s16le -ac 2 -ar 44100 \
 
      - > temp.a < /dev/null ffmpeg -i input.flv -an -f yuv4mpegpipe - > temp.v < /dev/null cat temp.v temp.v > all.v
@@ -61,7 +61,7 @@ b) Why do I have to specify a framerate while Wimpy player can play the flv at t
 
 The only way I found to concatenate two flvs was to use mencoder. Problem is, mencoder doesn't seem to concat flvs:
 
-```
+```shell
 mencoder input.flv input.flv -o output.flv -of lavf -oac copy \
 
    -ovc lavc -lavcopts vcodec=flv
@@ -69,7 +69,7 @@ mencoder input.flv input.flv -o output.flv -of lavf -oac copy \
 
 I get a Floating point exception...
 
-```
+```shell
 MEncoder 1.0rc2-4.0.1 (C) 2000-2007 MPlayer Team
 CPU: Intel(R) Xeon(R) CPU            5150  @ 2.66GHz (Family: 6, Model: 15, Stepping: 6)
 CPUflags: Type: 6 MMX: 1 MMX2: 1 3DNow: 0 3DNow2: 0 SSE: 1 SSE2: 1
@@ -110,7 +110,7 @@ c) Is there a way for mencoder to decode and encode flvs correctly?
 
 So the only way I've found so far to concat flvs, is to use ffmpeg to go back and forth between flv and avi, and use mencoder to concat the avis:
 
-```
+```shell
 ffmpeg -i input.flv -vcodec rawvideo -acodec pcm_s16le -r 15 file.avi
 mencoder -o output.avi -oac copy -ovc copy -noskip file.avi file.avi
 ffmpeg -i output.avi output.flv

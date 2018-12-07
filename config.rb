@@ -4,6 +4,10 @@
 require_relative 'helpers'
 helpers CustomHelpers
 
+activate :syntax, line_numbers: true
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true
+
 # Per-page layout changes:
 #
 # With no layout
